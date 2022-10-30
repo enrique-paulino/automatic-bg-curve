@@ -26,6 +26,7 @@ def run_curve(curve_turns):
             break
 
 if __name__ == '__main__':
+    cls()
     print("*---------------------------*")
     print("Enter your hero name".center(30))
     print("*---------------------------*")
@@ -67,7 +68,7 @@ if __name__ == '__main__':
             exit()
 
         cls()
-        
+
         print("*---------------------------*")
         print("Select a curve".center(30) + "\n")
         all_curves = curve.all()
@@ -75,7 +76,7 @@ if __name__ == '__main__':
         print("*---------------------------*")
         new_choice = int(input(">>> "))
         cls()
-        run_curve(all_curves[new_choice-1])
+        run_curve(all_curves[new_choice])
 
 
 

@@ -1,6 +1,6 @@
 from helper import *
 
-hero_sheet = read_csv("sheets/hero.csv")[4:90]
+hero_sheet = read_csv("../sheets/hero.csv")[4:90]
 
 def get_info(hero_name):
     for row in hero_sheet:
