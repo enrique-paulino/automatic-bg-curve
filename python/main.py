@@ -1,4 +1,5 @@
 from helper import *
+from textwrap import wrap
 
 import os
 import hero
@@ -13,6 +14,9 @@ def run_curve(curve_turns):
         try:
             turn += 1
             temp = "Turn: " + str(turn)
+            note = wrap("Note: " + curve.note(curve_turns), 30)
+            print(*[''.join(map(str,item)).center(30) for item in note], sep='\n')
+            print("*---------------------------*")            
             print(temp.center(30))
             print("*---------------------------*")
             print(next(curve_info).center(30))
